@@ -1,3 +1,8 @@
+VERSION
+*.iml
+*.ipr
+*.iws
+src/main/java/**/Version.java
 target/
 pom.xml.tag
 pom.xml.releaseBackup
