@@ -150,11 +150,8 @@ public abstract class AbstractDataSource implements DataSource
 							UTF8Reader reader = new UTF8Reader(file);
 							String content = reader.readString();
 							reader.close();
-//							Data<String> stringData = new Data<String>();
-//							stringData.setDiscriminator(returnType);
-//							stringData.setPayload(content);
-//							result = Serializer.toJson(stringData);
-							result = packageContent(content);
+//							result = packageContent(content);
+							result = content;
 						}
 						catch (IOException e)
 						{
