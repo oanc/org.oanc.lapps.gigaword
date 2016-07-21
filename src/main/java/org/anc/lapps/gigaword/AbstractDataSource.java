@@ -117,6 +117,9 @@ public abstract class AbstractDataSource implements DataSource
 							end = offset;
 						}
 					}
+					if (end >= keys.size()) {
+						end = keys.size() - 1;
+					}
 					logger.debug("Returning sublist {}-{}", start, end);
 					keys = keys.subList(start, end);
 				}
